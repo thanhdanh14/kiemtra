@@ -30,7 +30,7 @@
 
 <?php
 	if($_POST["username"] == "admin" && $_POST["password"] == "admin" && isset($_POST["btnSubmit"])) {
-		echo "Login success";
+		header("Location: ./success.php");
 	}
 	else { 
 		echo "Login fail";
