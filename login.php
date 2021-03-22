@@ -29,10 +29,12 @@
 </html>
 
 <?php
-	if($_POST["txtUsername"] == "admin" && $_POST["txtPassword"] == "admin" && isset($_POST["btnSubmit"])) {
-		header("Location: ./success.php");
-	}
-	else { 
-		echo "Login fail";
+	if(isset($_POST["btnSubmit"])) {
+		if($_POST["txtUsername"] == "admin" && $_POST["txtPassword"] == "admin") {
+			header("Location: ./success.php");
+		}
+		else { 
+			echo "Login fail";
+		}
 	}
 ?>
