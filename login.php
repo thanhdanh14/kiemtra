@@ -17,7 +17,11 @@
 				<td>Password</td>
 				<td><input type="password" name="txtPassword" size="30"></td>
 			</tr>
-
+			<tr>
+				<td>
+					<input type="submit" name="btnSubmit" value="Đăng nhập">
+				</td>
+			</tr>
 		</fieldset>
 	</form>
 </body>
