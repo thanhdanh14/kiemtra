@@ -11,10 +11,30 @@
 			<legend>Đăng nhập</legend>
 			<tr>
 				<td>Username</td>
-				<td><input type="text" name="username" size="30"></td>
+				<td><input type="text" name="txtUsername" size="30"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="txtPassword" size="30"></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" name="btnSubmit" value="Đăng nhập">
+				</td>
 			</tr>
 		</fieldset>
 	</form>
 </body>
 
 </html>
+
+<?php
+	if(isset($_POST["btnSubmit"])) {
+		if($_POST["txtUsername"] == "admin" && $_POST["txtPassword"] == "admin") {
+			header("Location: ./success.php");
+		}
+		else { 
+			echo "Login fail";
+		}
+	}
+?>
