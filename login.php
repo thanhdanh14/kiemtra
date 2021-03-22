@@ -29,7 +29,7 @@
 </html>
 
 <?php
-	if($_POST["username"] == "admin" && $_POST["password"] == "admin" && isset($_POST["btnSubmit"])) {
+	if($_POST["txtUsername"] == "admin" && $_POST["txtPassword"] == "admin" && isset($_POST["btnSubmit"])) {
 		header("Location: ./success.php");
 	}
 	else { 
